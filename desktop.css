@@ -1,0 +1,65 @@
+/* MEDIA DESKTOP */
+@media (min-width: 1200px) {
+  section:not(#instagram):not(#about) h2 {
+    text-align: left;
+    margin-left: 4rem;
+  }
+  h1, section:not(#instagram):not(#about) h2 {
+    font-size: 3rem;
+  }
+  #instagram h2 {
+    text-align: center;
+  }
+  #instagram .insta-grid {
+    min-height: 400px;
+  }
+  #recepies .see-more-btn, #traveling .see-more-btn {
+    font-size: 1rem;
+    bottom: .6rem;
+  }
+  #about .about-text {
+    width: 100%;
+  }
+  #about .about-text .about-text-content {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  #about .about-text .about-text-content .about-btn {
+    margin: 0 auto;
+  }
+  #about .about-text .about-text-content h2, #about .about-text .about-text-content p {
+    text-align: center;
+  }
+  #about .about-text .about-text-content h2 {
+    margin-left: 0;
+  }
+}
+
+/* MEDIA LARGE DESKTOP */
+@media screen and (min-width: 1400px) {
+  #recepies, #traveling {
+    max-width: 1400px;
+    margin-left: calc((100vw - 1400px) / 2);
+  }
+  #recepies .postbox, #traveling .postbox {
+    width: 100%;
+  }
+  #recepies .postbox .post img, #traveling .postbox .post img {
+    width: 400px;
+    height: 300px;
+    max-width: unset;
+    max-height: unset;
+  }
+}
+
+@media (min-width: 1300px) {
+  #instagram {
+    padding: 0 calc((100vw - 1300px) / 2);
+  }
+  #instagram .insta-grid {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=desktop.css.map */

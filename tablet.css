@@ -1,0 +1,223 @@
+/* MEDIA TABLET PORTRAIT */
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2.7rem;
+  }
+  .single-post {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  section {
+    margin: 2rem 0 2rem 0;
+  }
+  section:not(#instagram):not(#about) h2 i, h1 i {
+    font-size: 3rem;
+  }
+  .post-excerpt {
+    max-width: 900px;
+    width: calc(100% - 4.4rem);
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    -webkit-box-shadow: 3px 3px 10px rgba(140, 140, 140, 0.1);
+            box-shadow: 3px 3px 10px rgba(140, 140, 140, 0.1);
+    padding: 1.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .post-excerpt .the-thumbnail {
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    max-width: 400px;
+    height: auto;
+    margin-right: 1.5rem;
+  }
+  .post-excerpt .the-text {
+    max-width: 500px;
+  }
+  .post-excerpt .the-text i, .post-excerpt .the-text h3 {
+    text-align: left;
+  }
+  .post-excerpt .the-text i {
+    padding: 0 .5rem;
+  }
+  .post-excerpt .btn {
+    margin: 0;
+  }
+  .single-post .navigation {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .single-post .navigation .previous-post, .single-post .navigation .next-post {
+    width: calc(50% - 2 rem);
+  }
+}
+
+/* MEDIA TABLET LANDSCAPE */
+@media (min-width: 1024px) {
+  body {
+    padding-bottom: 400px;
+  }
+  #recepies h2, #traveling h2 {
+    margin-bottom: 0;
+  }
+  #recepies .see-more-btn, #traveling .see-more-btn {
+    max-width: 150px;
+    padding: .5rem;
+    margin-left: auto;
+    margin-top: 1rem;
+  }
+  #recepies .postbox, #traveling .postbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #recepies .postbox .post, #traveling .postbox .post {
+    margin: 1rem;
+  }
+  #recepies .postbox .post a img, #traveling .postbox .post a img {
+    -webkit-transition: .4s ease-in, -webkit-box-shadow .3s ease;
+    transition: .4s ease-in, -webkit-box-shadow .3s ease;
+    transition: box-shadow .3s ease, .4s ease-in;
+    transition: box-shadow .3s ease, .4s ease-in, -webkit-box-shadow .3s ease;
+    max-width: 100%;
+  }
+  #recepies .postbox .post a img:hover, #traveling .postbox .post a img:hover {
+    -webkit-box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+            box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+  }
+  #recepies .postbox .post a img:hover + .image-overlay, #recepies .postbox .post a .image-overlay:hover, #traveling .postbox .post a img:hover + .image-overlay, #traveling .postbox .post a .image-overlay:hover {
+    opacity: 1 !important;
+  }
+  #recepies .postbox .post a:hover, #traveling .postbox .post a:hover {
+    text-decoration: none;
+  }
+  #about {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    max-height: 800px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    -ms-flex-line-pack: stretch;
+        align-content: stretch;
+  }
+  #about img, #about .about-text p {
+    margin-left: auto;
+  }
+  #about img {
+    width: auto;
+    max-height: 700px;
+    height: 100%;
+    -webkit-box-shadow: 3px 3px 7px rgba(100, 100, 100, 0.15);
+            box-shadow: 3px 3px 7px rgba(100, 100, 100, 0.15);
+  }
+  #about .about-text .about-btn, #about .about-text h2 {
+    margin-left: 3rem;
+  }
+  #about .about-text h2 {
+    text-align: left;
+  }
+  #about .about-text p {
+    margin: 2rem 3rem;
+  }
+  #instagram .insta-grid {
+    position: relative;
+    display: block;
+    min-height: 300px;
+    width: 96vw;
+    margin: 2vw;
+    max-width: 1400px;
+  }
+  #instagram .insta-grid img {
+    width: calc(50% - 25px);
+  }
+  #instagram .insta-grid .insta1, #instagram .insta-grid .insta2, #instagram .insta-grid .insta3, #instagram .insta-grid .insta4, #instagram .insta-grid .insta5, #instagram .insta-grid .insta6 {
+    position: absolute;
+    margin: 0;
+    max-width: 400px;
+  }
+  #instagram .insta-grid .insta1 {
+    width: 20%;
+    left: 0;
+    bottom: 20px;
+  }
+  #instagram .insta-grid .insta2 {
+    width: 17%;
+    left: 17%;
+    bottom: 140px;
+  }
+  #instagram .insta-grid .insta3 {
+    width: 19%;
+    left: 32%;
+    bottom: 50px;
+  }
+  #instagram .insta-grid .insta4 {
+    width: 16%;
+    left: 48%;
+    bottom: 0;
+  }
+  #instagram .insta-grid .insta5 {
+    width: 20%;
+    left: 62%;
+    bottom: 60px;
+  }
+  #instagram .insta-grid .insta6 {
+    width: 21%;
+    right: 0;
+    bottom: 140px;
+  }
+  .message-above-footer {
+    bottom: 278px;
+  }
+  footer {
+    height: 278px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer h4 {
+    padding: 0;
+  }
+  footer div {
+    margin: 3rem;
+  }
+  footer img {
+    margin: 0 3rem;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+/*# sourceMappingURL=tablet.css.map */

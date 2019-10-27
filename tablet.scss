@@ -1,0 +1,225 @@
+$white: #fff;
+$black: #222222;
+$light-black: #4E4E4E;
+$gray: #595959;
+$green: #729C0B;
+$green-transparent: rgba(114,156,11,.6);
+$light-brown: #F5DBBE;
+$brown: #A17D54;
+
+$font-primary: 'Sansita', sans-serif;
+$font-secondary: 'Pacifico', cursive;
+
+/* MEDIA TABLET PORTRAIT */
+@media (min-width: 768px) {
+    h2 {
+        font-size: 2.7rem;
+    }
+
+    .single-post {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    section {
+        margin: 2rem 0 2rem 0;
+    }
+
+    section:not(#instagram):not(#about) h2, h1 {
+        i {
+            font-size: 3rem;
+        }
+    }
+    
+    .post-excerpt {
+        max-width: 900px;
+        width: calc(100% - 4.4rem);
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        border-radius: 2rem;
+        box-shadow: 3px 3px 10px rgba(140, 140, 140, 0.1);
+        padding: 1.2rem;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        .the-thumbnail {
+            flex-grow: 2;
+            max-width: 400px;
+            height: auto;
+            margin-right: 1.5rem;
+        }
+        .the-text {
+            max-width: 500px;
+            i, h3 {
+                text-align: left;
+            }
+            i {
+                padding: 0 .5rem;
+            }
+        }
+        .btn {
+            margin: 0;
+        }
+    }
+
+    .single-post {
+       .navigation {
+            flex-wrap: nowrap;
+            .previous-post, .next-post {
+                width: calc(50% - 2 rem);
+            }
+        }
+    }
+}
+
+/* MEDIA TABLET LANDSCAPE */
+@media (min-width: 1024px) {
+    body {
+        padding-bottom: 400px;
+    }
+
+    #recepies, #traveling {
+        h2 {
+            margin-bottom: 0;
+        }
+        .see-more-btn {
+            max-width: 150px;
+            padding: .5rem;
+            margin-left: auto;
+            margin-top: 1rem;
+        }
+
+        .postbox {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            justify-content: center;
+
+            .post {
+                margin: 1rem;
+                a {
+                    img {
+                        transition: box-shadow .3s ease, .4s ease-in;
+                        max-width: 100%;
+                    }
+                    img:hover {
+                        box-shadow: .2rem .2rem .5rem rgba(0,0,0,0.2);
+                    }
+                    img:hover + .image-overlay, .image-overlay:hover {
+                        opacity: 1 !important;
+                    }
+                }
+                a:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    #about {
+        align-items: center;
+        position: relative;
+        max-height: 800px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: stretch;
+        align-content: stretch;
+        img, .about-text p {
+            margin-left: auto;
+        }
+        img {
+            width: auto;
+            max-height: 700px;
+            height: 100%;
+            box-shadow: 3px 3px 7px rgba(100,100,100,0.15);
+        }
+        .about-text {
+            .about-btn, h2 {
+                margin-left: 3rem;
+            }
+            h2 {
+                text-align: left;
+            }
+            p {
+                margin: 2rem 3rem;
+            }
+        }
+    }
+
+    #instagram {
+        .insta-grid {
+            position: relative;
+            display: block;
+            min-height: 300px;
+            width: 96vw;
+            margin: 2vw;
+            max-width: 1400px;
+
+            img {
+                width: calc(50% - 25px);
+            }
+
+            .insta1, .insta2, .insta3, .insta4, .insta5, .insta6 {
+                position: absolute;
+                margin: 0;
+                max-width: 400px;
+            }
+
+            .insta1 {
+                width: 20%;
+                left: 0;
+                bottom: 20px;
+            }
+            .insta2 {
+                width: 17%;
+                left: 17%;
+                bottom: 140px;
+
+            }
+            .insta3 {
+                width: 19%;
+                left: 32%;
+                bottom: 50px;
+            }
+            .insta4 {
+                width: 16%;
+                left: 48%;
+                bottom: 0;
+
+            }
+            .insta5 {
+                width: 20%;
+                left: 62%;
+                bottom: 60px;
+
+            }
+            .insta6 {
+                width: 21%;
+                right: 0;
+                bottom: 140px;
+            }
+        }
+    }
+
+    .message-above-footer {
+        bottom: 278px;
+    }
+    footer {
+        height: 278px;
+        align-items: flex-start;
+        display: flex !important;
+        justify-content: center;
+        h4 {
+            padding: 0;
+        }
+        div {
+            margin: 3rem;
+        }
+        img {
+            margin: 0 3rem;
+            align-self: flex-end;
+        }
+    }
+
+}

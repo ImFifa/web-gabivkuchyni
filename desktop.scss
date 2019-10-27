@@ -1,0 +1,88 @@
+$white: #fff;
+$black: #222222;
+$light-black: #4E4E4E;
+$gray: #595959;
+$green: #729C0B;
+$light-brown: #F5DBBE;
+$brown: #A17D54;
+
+$font-primary: 'Sansita', sans-serif;
+$font-secondary: 'Pacifico', cursive;
+
+/* MEDIA DESKTOP */
+@media (min-width: 1200px) {
+    section:not(#instagram):not(#about) h2 {
+        text-align: left;
+        margin-left: 4rem;
+    }
+    h1, section:not(#instagram):not(#about) h2 {
+        font-size: 3rem;
+    }
+    #instagram {
+        h2 {
+            text-align: center;
+        }
+    .insta-grid {
+        min-height: 400px;
+    }
+}
+
+    #recepies, #traveling {
+        .see-more-btn {
+            font-size: 1rem;
+            bottom: .6rem;
+        }
+    }
+
+    #about {
+        .about-text {
+            width: 100%;
+            .about-text-content {
+                max-width: 700px;
+                margin: 0 auto;
+                .about-btn {
+                    margin: 0 auto;
+                }
+                h2, p {
+                    text-align: center;
+                }
+                h2 {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+/* MEDIA LARGE DESKTOP */
+@media screen and (min-width: 1400px) {
+    #recepies, #traveling {
+        max-width: 1400px;
+        margin-left: calc((100vw - 1400px) / 2);
+        .postbox {
+            width: 100%;
+            .post {
+                img {
+                    width: 400px;
+                    height: 300px;
+                    max-width: unset;
+                    max-height: unset;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1300px) {
+    #instagram {
+        padding: 0 calc((100vw - 1300px) / 2);
+        .insta-grid {
+            max-width: 1300px;
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
